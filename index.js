@@ -55,9 +55,7 @@ async function run() {
       }
     });
 
-    // ---------------------------
-    // POST new plant
-    // ---------------------------
+  
     app.post('/plants', async (req, res) => {
       try {
         const newPlant = req.body;
