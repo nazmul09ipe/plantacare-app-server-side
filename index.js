@@ -42,9 +42,7 @@ async function run() {
       }
     });
 
-    // ---------------------------
-    // GET single plant by ID
-    // ---------------------------
+ 
     app.get('/plants/:id', async (req, res) => {
       try {
         const id = req.params.id;
