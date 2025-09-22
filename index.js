@@ -27,9 +27,7 @@ async function run() {
 
     console.log(" MongoDB Connected & Routes are ready!");
 
-    // ---------------------------
-    // GET all plants or filter by careLevel
-    // ---------------------------
+   
     app.get('/plants', async (req, res) => {
       try {
         const { careLevel } = req.query;
