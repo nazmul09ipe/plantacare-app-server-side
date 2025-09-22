@@ -9,7 +9,7 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// MongoDB connection
+
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.pca4tsp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 const client = new MongoClient(uri, {
   serverApi: {
@@ -25,7 +25,7 @@ async function run() {
     await client.connect();
     const plantsCollection = client.db('plantDb').collection('plants');
 
-    console.log("✅ MongoDB Connected & Routes are ready!");
+    console.log(" MongoDB Connected & Routes are ready!");
 
     // ---------------------------
     // GET all plants or filter by careLevel
