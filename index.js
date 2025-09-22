@@ -67,9 +67,7 @@ async function run() {
       }
     });
 
-    // ---------------------------
-    // UPDATE plant by ID
-    // ---------------------------
+   
     app.put('/plants/:id', async (req, res) => {
       try {
         const id = req.params.id;
@@ -86,9 +84,7 @@ async function run() {
       }
     });
 
-    // ---------------------------
-    // DELETE plant by ID
-    // ---------------------------
+    
     app.delete('/plants/:id', async (req, res) => {
       try {
         const id = req.params.id;
