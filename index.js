@@ -95,15 +95,10 @@ async function run() {
         res.status(500).json({ error: "Failed to delete plant" });
       }
     });
-
-    // ---------------------------
-    // Root route
-    // ---------------------------
     app.get('/', (req, res) => {
       res.send('Hello World!');
     });
 
-    // Start server after DB connection
     app.listen(port, () => console.log(`Server running on port ${port}`));
 
   } catch (err) {
